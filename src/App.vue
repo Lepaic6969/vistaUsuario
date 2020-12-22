@@ -5,8 +5,8 @@
       <h1>DOKIMAN</h1>
       <nav>
         <button v-on:click="init" v-if="is_auth" > Inicio </button>
-        <button v-on:click="getBalance" v-if="is_auth" > Información </button>
-        <button v-if="is_auth" > Cambio Contraseña </button>
+        <button v-on:click="getBalance" v-if="is_auth" > Información Usuario</button>
+        <button v-on:click="getDocument" v-if="is_auth" > Información Documentos</button>
         <button v-if="is_auth" >Cerrar Sesión</button>
       </nav>
     </div>

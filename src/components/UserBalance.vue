@@ -1,7 +1,7 @@
 <template>
   <div id="UserBalance">
      <h2>{{username}}</h2>
-     <h2>Nombre: <span> {{name}}  </span><br>Apellido:<span> {{last_name}}<br>Departamento: {{department}}<br>Id: {{clearance}}</span><br></h2>
+     <h2>Nombre: <span> {{name}}  </span><br>Apellido:<span> {{last_name}}</span><br>Departamento:<span> {{department}}</span><br>Id: <span>{{clearance}}</span><br></h2>
      
   </div>
 </template>
@@ -17,7 +17,7 @@
                 last_name:"",
                 department:"",
                 clearance : 666,
-                documentos:{},
+              
                 
              }
        },

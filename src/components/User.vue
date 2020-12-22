@@ -1,6 +1,6 @@
 <template>
    <div id="User">
-       <h2>Hola <span> ¡Bienvenid@ a Dokiman! </span><br> El administrador de documentos por excelencia!</h2>
+       <h2>Hola <span>Cinthya Murgas <br>¡Bienvenid@ a Dokiman! </span><br> El administrador de documentos por excelencia!</h2>
    </div>
 </template>
 
