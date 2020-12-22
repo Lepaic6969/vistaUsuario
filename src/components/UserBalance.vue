@@ -23,7 +23,8 @@
 created: function(){
    this.username = this.$route.params.username
    let self = this
-   axios.get("https://dokiman.herokuapp.com/user/balance/" + this.username) 
+   axios.get("https://dokimanback.herokuapp.com/user/balance/" + this.username) 
+              
    //        
       .then((result) => {
           self.name = result.data.name
