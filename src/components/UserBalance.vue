@@ -1,7 +1,7 @@
 <template>
   <div id="UserBalance">
      <h2>{{username}}</h2>
-     <h2>Nombre: <span> {{name}}  </span><br>Apellido:<span> {{last_name}}</span><br>Documentos disponibles: {{documentos}}</h2>
+     <h2>Nombre: <span> {{name}}  </span><br>Apellido:<span> {{last_name}}<br>Departamento: {{department}}<br>id: {{clearance}}</span><br></h2>
      
   </div>
 </template>
@@ -12,9 +12,11 @@
       name: 'UserBalance',
       data: function (){
        return {
-                username: "",
+                
                 name:"",
                 last_name:"",
+                department:"",
+                clearance : 666,
                 documentos:{},
                 
              }
@@ -29,7 +31,8 @@ created: function(){
       .then((result) => {
           self.name = result.data.name
           self.last_name=result.data.last_name
-          self.documentos=result.data.documents
+          self.department=result.data.department
+          self.clearance=result.data.clearance
 
       })
       .catch((error) => {
